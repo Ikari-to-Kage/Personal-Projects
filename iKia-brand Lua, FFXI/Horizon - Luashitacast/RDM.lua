@@ -712,13 +712,13 @@ profile.HandleWeaponskill = function()
 	local player = gData.GetPlayer();
 	--local environ = gData.GetEnvironment(); -- Return once Obi's are mine.
 	
-	if (wsSTR:contains(action.name)) then
+	if (wsSTR:contains(action.Name)) then
         gFunc.EquipSet(sets.Strength);
-	elseif (wsDEX:contains(action.name)) then
+	elseif (wsDEX:contains(action.Name)) then
         gFunc.EquipSet(sets.Dexterity);
-	elseif (wsMND:contains(action.name)) then
+	elseif (wsMND:contains(action.Name)) then
         gFunc.EquipSet(sets.Mind);
-	elseif (wsMAG:contains(action.name)) then
+	elseif (wsMAG:contains(action.Name)) then
         gFunc.EquipSet(sets.Magic);
 	end 
 end
