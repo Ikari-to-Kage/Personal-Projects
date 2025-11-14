@@ -1,5 +1,6 @@
 ```
 ･ ─ ─ ─ ･ ･ ─ ─ ─ ･ ･ ─ ─ ─ ･˖⁺‧₊ ☽ 怒りと影 ☾ ₊‧⁺˖･ ─ ─ ─ ･ ･ ─ ─ ─ ･ ･ ─ ─ ─ ･ 
+
                Welcome to the workroom, please watch your step.
 
    If you've found this, congratulations. Either you've found a link I left
@@ -22,6 +23,7 @@ presented itself. That might mean this archive sits silent for months on
 end, then suddenly comes alive again-- that is the nature of my hyper-focus.
 
       All of this said, welcome to the workroom, please enjoy your stay.
+
 ･ ─ ─ ─ ･ ･ ─ ─ ─ ･ ･ ─ ─ ─ ･˖⁺‧₊ ☽ 怒りと影 ☾ ₊‧⁺˖･ ─ ─ ─ ･ ･ ─ ─ ─ ･ ･ ─ ─ ─ ･ 
 
     For the curious, the characters are my name. (Yes, I am a tiny nerd.)
