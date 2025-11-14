@@ -1,8 +1,8 @@
---Last Edit; 12-29-23-
+--Last Edit;11-14-25-
 --	*-----------*  --
 --	| Welcome <3|  --
 --	|  iKia.DNC |  --
---	|v.4.3.Fuck |  --
+--	|   v.4.3.  |  --
 --	*-----------*  --
 ---------------------
 --{(HUD Set-up>------
@@ -102,31 +102,31 @@ function get_sets()
 --{(Idle Sets>--
 	sets.Idle = {}
 		sets.Idle.Movement = {ammo="Staunch Tathlum",
-			head="Meghanada Visor +2",
-			body="Ashera Harness",
-			hands="Gleti's Gauntlets",
-			legs="Meg. Chausses +2",
-			feet="Tandava Crackows",
-			waist="Chaac Belt",
-			 neck="Bathy Choker +1",
-			 right_ear="Infused Earring",
-			 left_ear="Etiolation Earring",
-			 left_ring="Chirich Ring +1",
-			 right_ring="Karieyh Ring",
-			back={ name="Mecisto. Mantle", augments={'Cap. Point+48%','HP+25','Attack+4','DEF+13',}},}
+			head="Turms Cap",				-- Regen +6
+			body="Meg. Cuirie +2",			-- \
+			hands="Meg. Gloves +2",			--	> Regen +3/6 Set.
+			legs="Meg. Chausses +2",		-- /
+			feet="Tandava Crackows",		-- Movement+12%.
+			waist="Carrier's Sash",
+			 neck="Bathy Choker +1",		-- Regen +3
+			 left_ear="Infused Earring",	-- Regen +1
+			 right_ear="Alabaster Earring",	
+			 right_ring="Chirich Ring +1",	-- Regen +2
+			 left_ring="Karieyh Ring",		-- Regain +5.
+			back={ name="Senuna's Mantle", augments={'Phys. dmg. taken-10%',}},}
 		
 		sets.Idle.Defense = set_combine(sets.Idle.Movement,{
-			head="Nyame Helm",
+			ammo="Eluder's Sachet",
+			body="Gleti's Cuirass",
+			hands="Gleti's Gauntlets",
 			legs="Gleti's Breeches",
-			feet="Gleti's Boots",
-			neck="Loricate Torque +1",
-			waist="Carrier's Sash",
-			left_ring="Defending Ring",})
+			feet="Gleti's Boots",		
+			right_ring="Murky Ring",})
 
 --{(Melee Sets>--
 	sets.Engaged = {}
 	
-	sets.Engaged.Shredder = {ammo="Yamarang",
+	sets.Engaged.Shredder = {ammo="Coiste Bodhar",	-- DA/TA/Multi-Hell.
 		head="Adhemar Bonnet +1",
 		body="Horos Casaque +3",
 		hands="Adhemar Wristbands +1",
@@ -138,16 +138,16 @@ function get_sets()
 		right_ear="Suppanomimi",
 		left_ring="Epona's Ring",
 		right_ring="Gere Ring",
-		back={ name="Toetapper Mantle", augments={'"Store TP"+2','"Dual Wield"+3','"Rev. Flourish"+30',}},}	--STP Ambu.
+		back={ name="Senuna's Mantle", augments={'Phys. dmg. taken-10%',}},}
 	
 	sets.Engaged.Defender = set_combine(sets.Engaged.Shredder,{
-		head="Malignance Chapeau",
-		body="Malignance Tabard",
-		hands="Malignance Gloves",
-		feet="Malignance Boots",
-		neck="Loricate Torque +1",
-		right_ear="Brutal Earring",
-		right_ring="Defending Ring",})
+		head="Maculele Tiara +2",
+		body="Ashera Harness",			-- DT7
+		legs="Gleti's Breeches",		-- PDT8
+		feet="Maculele Toeshoes +2",	-- DT9	@+3, it's hardcap.
+		neck="Etoile Gorget +1",
+		right_ear="Alabaster Earring",	-- DT5
+		right_ring="Murky Ring",})		-- DT10 +PDT10Cape
 		
 		-- Accuracy [Defense]: 1170 -- DT [Defense]: 32DT, +10PDT, Cape+10. [Total: 52]
 	
@@ -232,12 +232,12 @@ function get_sets()
 		back={ name="Senuna's Mantle", augments={'DEX+20','Weapon skill damage +10%',}},}	-- Check into Rate+.
 	
 	sets.WSStr = {ammo="Coiste Bodhar",	-- Keyed to ["Pyrrhic Kleos"]. Raw stat power, amend as needed.
-		head="Lustratio Cap +1",	-- Evaluate once AF3+3 Hat.
+		head="Maculele Tiara +2",
 		body="Horos Casaque +3",	-- Evaluate once AF3+3.
 		hands="Nyame Gauntlets",	-- Evaluate once AF3+3 Hands.
 		legs="Horos Tights +3",		-- Evaluate once Gleti's high rank, AF3+3.
 		feet="Lustra. Leggings +1",	-- Stupidly highest STR/DEX item ever.
-		neck="Etoile Gorget +1",
+		neck="Fotia Gorget",
 		waist="Fotia Belt",
 		left_ear="Mache Earring +1",-- JSE if we ever get it. 
 		right_ear="Sherida Earring",
@@ -247,7 +247,7 @@ function get_sets()
 	
 	sets.WSMagAcc = sets.JA["Violent Flourish"]	-- Debuff WS, makes sure they hit.
 	
-	sets.WSElem = {ammo="Yamarang", --Aeolian.
+	sets.WSElem = {ammo="Ghastly Tathlum +1", --Aeolian.
 		head="Nyame Helm",
 		body="Nyame Mail",
 		hands="Nyame Gauntlets",
@@ -318,7 +318,7 @@ end
 			end
 		end
 		if (player.equipment.main =='Karambit') or (player.equipment.main =='Hep. Baghnakhs') then
-			equip(set_combine(sets.Engaged[EngagedArray[EngagedIndex]],{left_ear="Mache Earring +1",right_ear="Mache Earring +1"}))
+			equip(set_combine(sets.Engaged[EngagedArray[EngagedIndex]],{left_ear="Mache Earring +1",right_ear="Mache Earring +1",}))
 		end
 	end
 

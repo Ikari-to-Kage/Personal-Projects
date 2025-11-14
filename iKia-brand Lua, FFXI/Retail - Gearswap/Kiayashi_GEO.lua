@@ -127,7 +127,7 @@ function get_sets()
 			neck="Bathy Choker +1",
 			waist="Embla Sash",
 			left_ear="Infused Earring",
-			right_ear="Etiolation Earring",
+			right_ear="Alabaster Earring",
 			left_ring="Stikini Ring +1",
 			right_ring="Chirich Ring +1",
 			back="Mecisto. Mantle",}
@@ -138,7 +138,7 @@ function get_sets()
 			legs="Nyame Flanchard",
 			hands="Nyame Gauntlets",
 			neck="Loricate Torque +1",	
-			right_ring="Defending Ring",}
+			right_ring="Murky Ring",}
 			
 			-- https://www.ffxiah.com/members/item-sets/?id=400297 Set to Overlay, account accordingly.
 		sets.Idle.Pet =	{--main={ name="Solstice", augments={'Pet: Damage taken -4%',}},
@@ -165,7 +165,7 @@ function get_sets()
 			left_ear="Cessance Earring",
 			right_ear="Brutal Earring",
 			left_ring="Chirich Ring +1",
-			right_ring="Chirich Ring +1",
+			{right_ring="Chirich Ring +1", priority=1},
 			back="Nantosuelta's Cape",}
 			
 			sets.Engaged["General"].DW = set_combine(sets.Engaged.General,{left_ear="Suppanomimi",right_ear="Eabani Earring",})

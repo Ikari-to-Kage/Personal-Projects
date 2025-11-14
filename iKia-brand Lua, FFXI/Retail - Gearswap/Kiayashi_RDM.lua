@@ -163,9 +163,9 @@ function get_sets()
 			feet="Nyame Sollerets",
 			neck="Bathy Choker +1",
 			waist="Carrier's Sash",
-			left_ear="Eabani Earring",
+			left_ear="Alabaster Earring",
 			right_ear="Etiolation Earring",
-			left_ring="Defending Ring",
+			left_ring="Murky Ring",
 			right_ring="Chirich Ring +1",
 			back={ name="Sucellos's Cape", augments={'DEX+20','"Dbl.Atk."+10',}}}
 			-- DEF: 1219+ProV(230) DT: 33% DT, 20% PDT, 3% MDT. Refresh+3, Regen+7. Ailment Resist.
@@ -212,7 +212,7 @@ function get_sets()
 			waist="Eschan Stone",
 			left_ear="Sherida Earring",
 			right_ear="Crep. Earring",
-			left_ring="Defending Ring",
+			left_ring="Murky Ring",
 			right_ring="Chirich Ring +1",
 			back={ name="Sucellos's Cape", augments={'DEX+20','"Dbl.Atk."+10',}},}
 			-- Acc: 1209 DT: 55+Offhand.
@@ -229,11 +229,11 @@ function get_sets()
 			body="Nyame Mail",
 			hands="Nyame Gauntlets",
 			legs="Nyame Flanchard",
-			feet="Atro. Boots +3", 			-- Rate+10
+			feet="Atro. Boots +4", 			-- Rate+10
 			neck="Loricate Torque +1",
 			waist="Flume Belt",	
 			left_ear="Thureous Earring", 	-- Rate+2
-			right_ear="Eabani Earring",
+			right_ear="Alabaster Earring",
 			left_ring="Ilabrat Ring",
 			right_ring="Chirich Ring +1",
 			back={ name="Sucellos's Cape", augments={'Chance of successful block +5',}},}
@@ -254,13 +254,6 @@ function get_sets()
 		-- 	The En2 Crack Set.
 			--	sets.Engaged.Enspell = {main="Crocea Mors",sub="Forfend +1",ammo="Sroda Tathlum",head="Umuthi Hat",body="Viti. Tabard +3",hands="Aya. Manopolas +2",legs="Viti. Tights +3",
 			--	feet="Leth. Houseaux +3",neck="Incanter's Torque",waist="Olympus Sash",left_ear="Mimir Earring",right_ear="Andoaa Earring",left_ring="Stikini Ring +1",right_ring="Stikini Ring +1", back="Ghostfyre Cape",}		
-			
-		-- The WoC Enspell-M.Acc Special.
-			--	sets.Engaged.WoC = {ammo="Regal Gem",head="Leth. Chappel +2",body="Lethargy Sayon +2",hands="Leth. Ganth. +2",legs="Bunzi's Pants",feet="Leth. Houseaux +3",
-			--	neck={ name="Dls. Torque +2", augments={'Path: A',}},waist={ name="Sailfi Belt +1", augments={'Path: A',}},right_ear="Crep. Earring",left_ear="Digni. Earring",
-			--	left_ring="Chirich Ring",right_ring="Chirich Ring +1",back={ name="Sucellos's Cape", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Phys. dmg. taken-10%',}},}
-			--	sets.Engaged.WoC.DW = sets.Engaged.WoC
-
 
 --{(Weapons.>--	
 	sets.Crocea 	= {main="Crocea Mors",sub="Diamond Aspis",}	--Enspell.
@@ -276,12 +269,13 @@ function get_sets()
 	sets.Excalibur.DW	= {main="Excalibur",sub="Gleti's Knife",}	--Laugh.
 	sets.Almace.DW		= {main="Almace",sub="Gleti's Knife",}	--Crit.
 	sets.Maxentius.DW	= {main="Maxentius",sub="Thibron",}		--TP-Bonus.
-	--sets.Naegling.DW	= {main="Naegling",sub="Thibron",}		--TP-Bonus.
+	-- 	sets.Naegling.DW	= {main="Naegling",sub="Thibron",}		--TP-Bonus.
 	sets.Tauret.DW		= {main="Tauret",sub="Gleti's Knife",}	--Crit.
 	--	Pick one based on current need.
 	--	sets.Magic.DW	= {main="Crocea Mors",sub="Bunzi's Rod",}	--Sanguine.
 		sets.Magic.DW	= {main="Crocea Mors",sub="Daybreak",}		--Seraph/Shining.
 	--	sets.Magic.DW	= {main="Crocea Mors",sub="Thibron",}		--Red Lotus.	
+	--	sets.Magic.DW	= {main="Ceremonial Dagger",sub="Ceremonial Dagger",}	-- En'taps.
 	
 	sets.NukeDW		= {main="Bunzi's Rod",sub="Daybreak",}	-- Nuke set for DW.
 	
@@ -395,7 +389,7 @@ function get_sets()
 			 waist="Yemaya Belt",
 			left_ear="Telos Earring",
 			 right_ear="Enervating Earring",
-			--left_ring="Cacoethic Ring +1",
+			left_ring="Cacoethic Ring +1",
 			right_ring="Karieyh Ring",
 			back={ name="Sucellos's Cape", augments={'STR+20','Weapon skill damage +10%',}},} --Malig, and ranged acc.
 
@@ -435,8 +429,8 @@ function get_sets()
 		neck="Loricate Torque +1",		--SIRD+5	DT-6
 		waist="Emphatikos Rope",		--SIRD+12			Aqua+1!
 		left_ear="Magnetic Earring",	--SIRD+8
-		right_ear="Etiolation Earring",	-- ->		MDT-3	[or, SS+10/Duration+7]
-		left_ring="Defending Ring",		-- ->		DT-10
+		right_ear="Alabaster Earring",	-- ->		DT-5	[or, SS+10/Duration+7]
+		left_ring="Murky Ring",			--SIRD+5	DT-10
 		right_ring="Freke Ring",		--SIRD+10
 		back={ name="Sucellos's Cape", augments={'Damage taken-5%',}},}
 	
@@ -445,7 +439,7 @@ function get_sets()
 			sub="Ammurapi Shield",
 			ammo="Regal Gem",
 			head="Viti. Chapeau +3",
-			body="Atrophy Tabard +3",
+			body="Atrophy Tabard +4",
 			hands="Leth. Ganth. +2",
 			legs={ name="Chironic Hose", augments={'Mag. Acc.+22 "Mag.Atk.Bns."+22','INT+9','Mag. Acc.+15',}},
 			feet="Vitiation Boots +3",
@@ -463,7 +457,7 @@ function get_sets()
 			sub="Ammurapi Shield",
 			ranged="Ullr",
 			head="Atrophy Chapeau +3",
-			body="Atrophy Tabard +3",
+			body="Atrophy Tabard +4",
 			hands="Leth. Ganth. +2",
 			legs={ name="Chironic Hose", augments={'Mag. Acc.+15',}},
 			feet="Vitiation Boots +3",
@@ -872,9 +866,11 @@ end
 		end
 	elseif spell.type == "Effusion" then
 		equip(sets.MidCast[ElementalArray[ElementalIndex]])
+	elseif spell.type == "Ward" then
+		equip(sets.Hate)
 	else	-- The "Kia needs to build hate" clause. Also includes timer++.
 		if (spell.type == "Step") or (spell.type == "Flourish1") or (spell.type == "Flourish2") or (spell.type == "Samba") then
-			equip(sets.MidCast.Hate)
+			equip(sets.MidCast.Hate)	-- The Stop Wiping My Damned TP Clause.
 		else
 			equip(set_combine(sets.MidCast.Hate,sets.JA.Time))
 		end
@@ -924,8 +920,8 @@ end
 			else equip(set_combine(sets.MidCast.Duration,{main="Bolelabunga",body={ name="Telchine Chas.", augments={'Enh. Mag. eff. dur. +10',}},})) end						
 		elseif Refreshes:contains(spell.name) then
 			if buffactive.Composure and spell.target.type ~= 'SELF' then
-				equip(set_combine(sets.MidCast.Composure,{head="Amalric Coif +1",body="Atrophy Tabard +3",legs="Leth. Fuseau +2",})) 
-			else equip(set_combine(sets.MidCast.Duration,{head="Amalric Coif +1",body="Atrophy Tabard +3",legs="Leth. Fuseau +2",waist="Gishdubar Sash",})) end		
+				equip(set_combine(sets.MidCast.Composure,{head="Amalric Coif +1",body="Atrophy Tabard +4",legs="Leth. Fuseau +2",})) 
+			else equip(set_combine(sets.MidCast.Duration,{head="Amalric Coif +1",body="Atrophy Tabard +4",legs="Leth. Fuseau +2",waist="Gishdubar Sash",})) end		
 		elseif Heals:contains(spell.name) then
 			if spell.target.type == 'SELF' then
 				equip(set_combine(sets.MidCast.Cures,{waist="Gishdubar Sash",}))

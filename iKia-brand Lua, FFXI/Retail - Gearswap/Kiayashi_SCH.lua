@@ -143,16 +143,17 @@ function get_sets()
 			body="Shamash Robe",
 			hands="Nyame Gauntlets",
 			legs="Nyame Flanchard",
-			neck="Loricate Torque +1",		-- Good.
-			right_ear="Flashward Earring",	-- Etheral Dmg>Mp?
-			right_ring="Defending Ring",})
+			neck="Loricate Torque +1",		
+			right_ear="Alabaster Earring",	
+			right_ring="Defending Ring",
+			left_ring="Murky Ring",})
 
 --{(Melee Sets>--
 	sets.Engaged = {}
 		sets.Engaged.General = {ammo="Amar Cluster",
 			head={ name="Blistering Sallet +1", augments={'Path: A',}},
 			body="Agwu's Robe",			-- AF3+2
-			hands="Nyame Gauntlets",	-- ^?
+			hands="Gazu Bracelets +1",	-- ^?
 			legs="Nyame Flanchard",		-- ^?
 			feet="Arbatel Loafers +2",
 			neck="Clotharius Torque", 	-- Skill Torque.
@@ -165,6 +166,7 @@ function get_sets()
 
 		sets.Engaged.Defense = set_combine(sets.Engaged.General,{ammo="Staunch Tathlum",
 			body="Nyame Mail",
+			hands="Nyame Gauntlets",
 			legs="Nyame Flanchard",
 			feet="Nyame Sollerets",
 			left_ear="Crep. Earring",
@@ -243,7 +245,7 @@ function get_sets()
 			feet="Regal Pumps +1",
 			neck="Incanter's Torque",
 			waist="Embla Sash",
-			right_ear="Infused Earring",
+			right_ear="Alabaster Earring",
 			left_ear="Eabani Earring",
 			left_ring="Lebeche Ring",
 			right_ring="Kishar Ring",
@@ -267,10 +269,11 @@ function get_sets()
 		feet="Nyame Sollerets",
 		neck="Loricate Torque +1",
 		waist="Emphatikos Rope",
-		right_ear="Thureous Earring",
+		right_ear="Alabaster Earring",
 		left_ear="Etiolation Earring",
 		left_ring="Defending Ring",
-		right_ring="Ayanmo Ring",}
+		right_ring="Murky Ring"
+		,}
 	
 	-- Enfeebling Kits
 		sets.MidCast['Enfeebling Magic']= {main="Daybreak",
@@ -440,7 +443,7 @@ end
 	function Sublimation()
 		if (buffactive['Sublimation: Activated']) 
 			then equip({waist="Embla Sash", body="Peda. Gown +3",--head="Acad. Mortarboard"
-				left_ear="Etiolation Earring",left_ring="Meridian Ring",right_ring="K'ayres Ring",})
+				right_ear="Alabaster Earring",left_ear="Etiolation Earring",left_ring="Meridian Ring",right_ring="K'ayres Ring",})
 		end
 	end
 

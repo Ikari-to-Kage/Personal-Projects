@@ -1,4 +1,4 @@
---Last Edit; 2-25-25-
+--Last Edit;10ish-25-
 --	*-----------*  --
 --	| Welcome <3|  --
 --	|  iKia.BLU |  --
@@ -427,7 +427,7 @@ function get_sets()
 
 		--sets.MidCast.Treasure = {head="Volte Cap",body="Volte Jupon",waist="Chaac Belt",}
 			sets.MidCast['Stone']= set_combine(sets.MidCast.Freenuke,{head="Volte Cap",body="Volte Jupon",waist="Chaac Belt",})
-			sets.MidCast['Subduction']= set_combine(sets.MidCast.Freenuke,{body="Volte Jupon",})
+			sets.MidCast['Subduction']= set_combine(sets.MidCast.Freenuke,{head="Volte Cap",body="Volte Jupon",})
 			sets.MidCast['Diaga']= set_combine(sets.MidCast.SIRD,{head="Volte Cap",body="Volte Jupon",waist="Chaac Belt",})		
 			sets.MidCast['Dia']= set_combine(sets.MidCast.SIRD,{head="Volte Cap",body="Volte Jupon",waist="Chaac Belt",})
 			sets.MidCast['Dia II']= set_combine(sets.MidCast.SIRD,{head="Volte Cap",body="Volte Jupon",waist="Chaac Belt",})

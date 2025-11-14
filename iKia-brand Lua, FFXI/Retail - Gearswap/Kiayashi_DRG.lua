@@ -1,4 +1,4 @@
---Last Edit; 7ish-25-
+--Last Edit;11-14-25-
 --	*-----------*  --
 --	| Welcome <3|  --
 --	|  iKia.DRG |  --
@@ -99,7 +99,7 @@ function get_sets()
 			feet="Ptero. Greaves +3",		-- Pet Regen+7
 			 neck="Bathy Choker +1",		-- Regen+3
 			 right_ear="Infused Earring",	-- Regen+1
-			 left_ear="Etiolation Earring",	-- HP/MP+50
+			 left_ear="Alabaster Earring",	-- HP+100, DT+5.
 			 left_ring="Chirich Ring +1",	-- Regen+2
 			 right_ring="Karieyh Ring",		-- Regain+5
 			waist="Carrier's Sash",			-- Ele. Res.
@@ -112,13 +112,13 @@ function get_sets()
 				 legs="Ptero. Brais +3",	-- WyPDT-11%
 				feet="Nyame Sollerets",		-- DT-7%
 				 neck="Dgn. Collar +1",		-- Pet, DT-20%
-				--left_ring="Shadow Ring",	-- Magic Annul.
+				left_ring="Murky Ring",		-- DT-5%
 				right_ring="Defending Ring",-- DT-10%
 				back={ name="Brigantia's Mantle", augments={'Phys. dmg. taken-10%',}},})
-			-- DmgReduc >> [Me: DT-35%, PDT-17%] [Rai: DT-28%, PDT-11%]
+			-- DmgReduc >> [Me: DT-40%, PDT-17%] [Rai: DT-28%, PDT-11%]
 			
 			sets.Idle.Sacrilege = set_combine(sets.Idle.Defense,{body="Ptero. Mail +3", -- Surge+.
-				legs="Vishap Brais +3",		-- HP+.
+				legs="Vishap Brais +4",		-- HP+.
 				feet="Ptero. Greaves +3",	-- HP+.
 				neck="Dgn. Collar +1",		-- Lv.+
 				left_ear="Pel. Earring +1", -- Lv.+
@@ -152,10 +152,10 @@ function get_sets()
 			feet="Flam. Gambieras +2",		-- STP6, DA6
 			neck="Dgn. Collar +1",			-- P.PDT20
 			waist="Sailfi Belt +1",			-- TA2, DA5, eventually.
-			left_ear="Telos Earring",		-- DA1, STP5
+			left_ear="Alabaster Earring",	-- DT5, HP, Haste+5. Recalc summary below.
 			right_ear="Sherida Earring",	-- DA5, STP5
 			left_ring="Niqmaddu Ring",		-- QA3
-			right_ring="Defending Ring",	-- DT10
+			right_ring="Murky Ring",		-- DT10
 			back={ name="Brigantia's Mantle", augments={'DEX+20','"Dbl.Atk."+10','Phys. dmg. taken-10%',}},}
 		-- Accuracy >> [Trishula: 1300] [Naegling: 1225]  				-- Multi-hit >> [DA: 37+15%] [TA: 2%] [QA: 3%]
 		-- To-Hit-# >> [Trishula: 5 * 231/SAM50+] [Naegling: 10 * 104/WAR50+] HASTE: 22% Listed. Raiden is normally Enough.
@@ -179,7 +179,7 @@ function get_sets()
 	sets.JA = { }
 
 	sets.JA["Call Wyvern"] = {body="Ptero. Mail +3"}
-	sets.JA["Ancient Circle"] = {legs="Vishap Brais +3"} 
+	sets.JA["Ancient Circle"] = {legs="Vishap Brais +4"} 
 	sets.JA["Spirit Link"] = {head="Vishap Armet", feet={ name="Ptero. Greaves +3", augments={'Enhances "Empathy" effect',}},} --Causes HP drain.
 	sets.JA["Angon"] = {ammo="Angon",hands="Ptero. Fin. G. +3",
 			head="Volte Cap",body="Volte Jupon",waist="Chaac Belt",} --Also TH4! 
@@ -202,9 +202,9 @@ function get_sets()
 			sets.JA["Spirit Jump"] = set_combine(sets.JA["Jump"],{})
 
 	-- Wyvern Max HP -> Steady Wing & Spirit Surge Shield/HP+ Potency.
-	sets.JA["Spirit Surge"] = {body="Ptero. Mail +3",legs="Vishap Brais +3",feet="Ptero. Greaves +3",neck="Dgn. Collar +1",back="Updraft Mantle",left_ear="Pel. Earring +1"}
+	sets.JA["Spirit Surge"] = {body="Ptero. Mail +3",legs="Vishap Brais +4",feet="Ptero. Greaves +3",neck="Dgn. Collar +1",back="Updraft Mantle",left_ear="Pel. Earring +1"}
 		
-	sets.JA["Steady Wing"] = {legs="Vishap Brais +3",feet="Ptero. Greaves +3",neck="Dgn. Collar +1",back="Updraft Mantle",left_ear="Pel. Earring +1"}
+	sets.JA["Steady Wing"] = {legs="Vishap Brais +4",feet="Ptero. Greaves +3",neck="Dgn. Collar +1",back="Updraft Mantle",left_ear="Pel. Earring +1"}
 	
 	sets.JA["Provoke"] = {head="Rabid Visor",body="Emet Harness +1",legs="Zoar Subligar +1",neck="Warder's Charm +1",
 		left_ear="Cryptic Earring",right_ear="Friomisi Earring",left_ring="Begrudging Ring",right_ring="Petrov Ring",} --Emn+
@@ -281,8 +281,8 @@ function get_sets()
 			--legs={ name="Blood Cuisses", augments={'"Fast Cast"+5','Evasion+4','"Mag.Def.Bns."+4',}}, --Cause intimidating myself is fun.
 			feet={ name="Carmine Greaves +1", augments={'Accuracy+12','DEX+12','MND+20',}},
 			waist="Sailfi Belt +1",
-			left_ear="Etiolation Earring",
-			right_ear="Loquac. Earring",
+			right_ear="Etiolation Earring",
+			left_ear="Loquac. Earring",
 			right_ring="Lebeche Ring",} --QM+2%
 
 --{(Midcast Sets>--	
@@ -296,8 +296,8 @@ function get_sets()
 			feet="Flam. Gambieras +2",
 			neck="Bathy Choker +1",
 			waist="Carrier's Sash",
-			left_ear="Etiolation Earring",
-			right_ear="Eabani Earring",
+			left_ear="Alabaster Earring",
+			right_ear="Etiolation Earring",
 			left_ring="Defending Ring",} 
 		
 		sets.MidCast['Enhancing Magic']= set_combine(sets.BreathTrigger,{head="Carmine Mask",legs="Carmine Cuisses +1",
@@ -310,12 +310,12 @@ function get_sets()
 		sets.HealingBreath = {head="Ptero. Armet +3",	-- Breath+28
 			body="Acro Surcoat", 		-- Breath +7, M.Acc.+24
 			hands="Acro Gauntlets", 	-- Breath +8, M.Acc.+18 
-			legs="Vishap Brais +3",		-- HP+27%
+			legs="Vishap Brais +4",		-- HP+27%
 			feet="Ptero. Greaves +3",	-- HP+290.
 			neck="Dgn. Collar +1",		-- Level+1.
 			waist="Incarnation Sash", 	-- M.Acc+15.
 			right_ear="Pel. Earring +1",-- Level+1.
-			--left_ring="Shadow Ring",	-- Magic Annul.
+			left_ring="Murky Ring",		-- DT+M.Acc+15
 			right_ring="Defending Ring",-- DT-10% cause this set is MADE OF PAPER--
 			back={ name="Updraft Mantle", augments={'STR+5','Pet: Breath+10','Pet: Damage taken -1%',}},}
 

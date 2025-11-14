@@ -156,7 +156,7 @@ function get_sets()
 			 waist="Flume Belt",
 			 left_ear="Eabani Earring",
 			 right_ring="Chirich Ring +1",
-			 left_ring="Defending Ring",
+			 left_ring="Murky Ring",
 			back={ name="Intarabus's Cape", augments={'Phys. dmg. taken-10%',}},})
 
 		sets.Idle.Kiting = {main="Gleti's Knife",sub="Genmei Shield",range="Linos",
@@ -171,7 +171,7 @@ function get_sets()
 			right_ear="Infused Earring",
 			left_ring="Defending Ring",
 			right_ring="Ilabrat Ring",
-			back="Relucent Cape",}
+			back="Relucent Cape",}	-- Evasion++, leave it alone.
 
 --{(Melee Sets>--
 	sets.Engaged = {}
@@ -239,7 +239,7 @@ function get_sets()
 			left_ear="Etiolation Earring",
 			right_ear="Regal Earring",
 			left_ring="Defending Ring",
-			right_ring="Ayanmo Ring",
+			right_ring="Murky Ring",
 			back="Kumbira Cape",}
 
 --{(WS Sets - By Stat, specialty as needed.>--

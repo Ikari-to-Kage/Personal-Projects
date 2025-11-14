@@ -1,8 +1,8 @@
---Last Edit; 7-13-22-
+--Last Edit;11-14-25-
 --	*-----------*  --
 --	| Welcome <3|  --
 --	|  iKia.WHM |  --
---	|v.4.0.Fuck |  --
+--	| v.4.0.Bap |  --
 --	*-----------*  --
 ---------------------
 --{(HUD Set-up>------
@@ -139,9 +139,9 @@ function get_sets()
 			waist="Embla Sash",
 			 neck="Bathy Choker +1",
 			 right_ear="Infused Earring",
-			 left_ear="Etiolation Earring",
-			 left_ring="Chirich Ring +1",
-			 right_ring="Karieyh Ring",
+			 left_ear="Alabaster Earring",
+			 left_ring="Stikini Ring +1",
+			 right_ring="Chirich Ring +1",
 			back="Kumbira Cape",}
 
 				sets.Idle.Defense = set_combine(sets.Idle.Movement,{sub="Genmei Shield",
@@ -167,7 +167,7 @@ function get_sets()
 			waist="Windbuffet Belt +1",
 			left_ear="Cessance Earring",
 			right_ear="Telos Earring",
-			left_ring="Chirich Ring",
+			left_ring="Chirich Ring +1",
 			right_ring="Chirich Ring +1",
 			back={ name="Alaunus's Cape", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Phys. dmg. taken-10%',}},}
 			
@@ -180,7 +180,7 @@ function get_sets()
 				waist="Carrier's Sash",
 				left_ear="Etiolation Earring",
 				right_ear="Flashward Earring",
-				right_ring="Ayanmo Ring",
+				right_ring="Murky Ring",
 				left_ring="Defending Ring",})
 				
 				sets.Engaged["Defense"].DW = set_combine(sets.Engaged.Defense,{waist="Shetal Stone",
@@ -306,13 +306,16 @@ function get_sets()
 		sets.Debuffna = set_combine(sets.Conserve,{main="Piety Wand",head="Ebers Cap",hands="Ebers Mitts",neck="Clr. Torque +2",back="Mending Cape",})
 	
 	-- Healing Kits
-		sets.MidCast['Healing Magic']= set_combine(sets.Conserve,{ammo="Impatiens",
+		sets.MidCast['Healing Magic']= set_combine(sets.Conserve,{main="Gada",
+			ammo="Impatiens",
 			head={ name="Vanya Hood", augments={'Healing magic skill +20',}},
 			body="Ebers Bliaut +1",
-			hands="Inyan. Dastanas +2",
+			hands="Fanatic Gloves",
 			legs="Th. Pantaloons +2",
-			feet="Regal Pumps +1",
+			feet="Vanya Clogs",
 			neck="Incanter's Torque",
+			waist="Witful Belt", -- Haste for recast.
+			left_ear="Alabaster Earring",
 			left_ring="Haoma's Ring",
 			right_ring="Sirona's Ring",}) -- Primary Use; Cursna.
 
